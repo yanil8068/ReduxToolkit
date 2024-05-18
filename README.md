@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Learning
+
+Steps for redux toolkit:
+Create store using configureStore method from reduxToolkit
+Create slice using createSlice method from reduxToolkit. createSlice takes name,initialState, reducers and in reducers we define all the reducers as nameofaction: (state,action)=>{ do this here }
+Using Provider wrap the whole root component app,js and pass store that we create in it as a prop store
+Using useSelector get the values of the state stored in redux that is what ever be in the initialState defined in slice
+Using useDispatch call action what ever is defined in slice.
